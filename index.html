@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <header class="cont">
+        <div class="head d-flex">
+            <div class="col-lg-6 head_left">
+                <h3>Interactive</h3>
+                <p>Geometry Genius</p>
+            </div>
+            <div class="col-lg-6 head_right ">
+                <button id="btn-blog" class="btn-blog" >Blog</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="cont">
+        <section class="main-body d-flex gap-3 mt-5">
+
+            <div class="card" style="width: 17rem;">
+                <img src="./images/triangle.png" class="card-img-top" style="height: 12rem;" alt="...">
+                <div class="card-body">
+                  <h5 id="card-title" class="card-title">Triangle</h5>
+                  <p class="card-text">Area (A) = 0.5 * b * h</p>
+
+                  <div class="input-user d-flex gap-2">
+                    <input id="user-input-1" type="number" placeholder="b">
+                    <p>cm</p>
+                    <input id="user-input-2" type="number" placeholder="h">
+                    <p>cm</p>
+                  </div>
+                  <a href="#" id="btn-calculate" class="btn btn-primary">Calculate</a>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 17rem;">
+                <img src="./images/rectangle.png" class="card-img-top" style="height: 12rem;" alt="...">
+                <div class="card-body">
+                  <h5 id="rectangle-title" class="card-title">Rectangle</h5>
+                  <p class="card-text">Area (A) = w * l</p>
+
+                  <div class="input-user d-flex gap-2">
+                    <input id="rectangle-input1" type="number" placeholder="w">
+                    <p>cm</p>
+                    <input id="rectangle-input2" type="number" placeholder="l">
+                    <p>cm</p>
+                  </div>
+                  <a id="rectangle-calculate-btn" href="#" class="btn btn-primary">Calculate</a>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 17rem;">
+                <img src="./images/parallelogram.png" class="card-img-top" style="height: 12rem;" alt="...">
+                <div class="card-body">
+                  <h5 id="title-parallelogram" class="card-title">Parallelogram</h5>
+                  <p class="card-text">Area (A) = b * h</p>
+
+                  <div class="input-user d-flex gap-2">
+                    <input id="parallelogram-input1" type="number" placeholder="b">
+                    <p>cm</p>
+                    <input id="parallelogram-input2" type="number" placeholder="h">
+                    <p>cm</p>
+                  </div>
+                  <a id="btn-parallelogram" href="#" class="btn btn-primary">Calculate</a>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 21rem;">
+                <div class="card-body">
+                  <h5 class="card-title area-calculation">Area Calculation</h5>
+                  <div class="calculation-row d-flex gap-2">
+                    <h5 id="title" class="title"></h5>
+                    <p id="result-cm" class="result"><span id="result" ></span>cm<sup>2</sup></p>
+                    <button class="btn btn-primary">convert</button>
+                  </div>
+
+                  
+                </div>
+            </div>
+
+              
+
+        </section>
+        <section class="main-body d-flex gap-3 mt-5">
+
+            <div class="card" style="width: 17rem;">
+                <img src="./images/rhombus.png" class="card-img-top" style="height: 12rem;" alt="...">
+                <div class="card-body">
+                  <h5 id="title-rhombus" class="title-rhombus">Rhombus</h5>
+                  <p class="card-text">Area (A) = 0.5 * d<sub>1</sub>  * d<sub>2</sub></p>
+                  <p class="card-text"> d<sub>1</sub> = 16cm  d<sub>2</sub> = 8cm</p>
+
+                  <div class="input-user d-flex gap-2">
+                    <input id="rhombus-input1" type="number" placeholder="d1">
+                    <p>cm</p>
+                    <input id="rhombus-input2" type="number" placeholder="d2">
+                    <p>cm</p>
+                  </div>
+                  <a id="btn-rhombus" href="#" class="btn btn-primary ">Calculate</a>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 17rem;">
+                <img src="./images/pentagon.png" class="card-img-top" style="height: 12rem;" alt="...">
+                <div class="card-body">
+                  <h5 id="title-pentagon" class="card-title">Pentagon</h5>
+                  <p class="card-text">Area (A) = 0.5 * p  * b</p>
+                  <p class="card-text"> p = 6cm  b = 10cm</p>
+
+                  <div class="input-user d-flex gap-2">
+                    <input id="pentagon-input1" type="number" placeholder="p">
+                    <p>cm</p>
+                    <input id="pentagon-input2" type="number" placeholder="b">
+                    <p>cm</p>
+                  </div>
+                  <a id="btn-pentagon" href="#" class="btn btn-primary">Calculate</a>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 17rem;">
+                <img src="./images/ellipse.png" class="card-img-top" style="height: 12rem;" alt="...">
+                <div class="card-body">
+                  <h5 id="title-ellipse" class="card-title">Ellipse</h5>
+                  <p class="card-text">Area (A) = 3.14 * ab</p>
+                  <p class="card-text"> a = 10cm  b = 4cm</p>
+
+                  <div class="input-user d-flex gap-2">
+                    <input id="ellipse-input1" type="number" placeholder="a">
+                    <p>cm</p>
+                    <input id="ellipse-input2" type="number" placeholder="b">
+                    <p>cm</p>
+                  </div>
+                  <a id="btn-ellipse" href="#" class="btn btn-primary">Calculate</a>
+                </div>
+            </div>
+
+
+
+
+              
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/blog.js"></script>
+    <script src="./js/calculate.js"></script>
+    <script src="./js/functions-calculate.js"></script>
+</body>
+</html>

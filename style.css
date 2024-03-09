@@ -1,0 +1,66 @@
+.cont{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.head{
+    background: #7dbbdf;
+    height: 70px;
+}
+
+.head_left{
+    line-height: 0.2;
+    margin-left: 20px;
+    /* border: 2px solid black; */
+}
+.head_left p{
+    color: aliceblue;
+}
+
+.head_right{
+    padding-left: 480px;
+    /* border: 2px solid black; */
+
+}
+
+.head_right button{
+    background-color: #1090D8;
+    color: whitesmoke;
+    font-size: 20px;
+    /* line-height: 70px; */
+    margin-top:  15px;
+    padding: 2px 25px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+.card-body{
+    text-align: center;
+}
+
+input{
+    width: 90px;
+    height: 30px;
+}
+
+.btn-primary{
+    width: 100%;
+}
+
+.area-calculation{
+    border-bottom: 1px solid black;
+}
+
+.card-body button{
+    width: 40%;
+    padding: 5px;
+}
+
+#result-cm{
+    display: none;
+}
+
+#title{
+    display: none;
+}
